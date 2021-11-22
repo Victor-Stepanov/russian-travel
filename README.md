@@ -23,3 +23,4 @@
 ## Полезные ссылки
 
 - https://doka.guide
+- https://victor-stepanov.github.io/russian-travel/
