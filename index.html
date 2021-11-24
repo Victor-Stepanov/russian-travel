@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
-<!--Комментарий для ревьюера: В первой итерации, будут вот такие комментарии, прошу понять и простить. В финальной версии их уберу-->
+
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,11 +10,10 @@
 </head>
 
 <body class="page">
-	<!--Комментарий для ревьюера: По тз, вроде лого не должно быть ссылкой, но решил сделать все же его ссылкой, это норм или не стоит?-->
 	<header class="header">
-		<a href="#" class="header__logo" target="_blank"></a>
+		<a href="#" class="header__logo" target="_self"></a>
 		<ul class="header__lang">
-			<li class="header__lang-item"><a href="#" class="header__lang-link header__lang_active">Ru</a></li>
+			<li class="header__lang-item"><a href="#" class="header__lang-link  header__lang-link_active">Ru</a></li>
 			<li class="header__lang-item"><a href="#" class="header__lang-link">En</a></li>
 		</ul>
 
@@ -27,7 +27,7 @@
 				<figcaption class="lead__caption">ваша полка — верхняя</figcaption>
 			</figure>
 		</section>
-		<!--Комментарий для ревьюера: Данный блок, оказался запарным, из-за его ширины, не придумал ничего лучше, чем подгонять с помощью padding-->
+		
 		<section class="intro">
 			<h2 class="intro__title">Чего мы&nbsp;там не&nbsp;видели?</h2>
 			<p class="intro__text">По опросам ВЦИОМ, 95% россиян мечтают куда-нибудь поехать, но только 36% планируют
@@ -40,16 +40,17 @@
 				километров по родной стране. Мы выбрали и описали некоторые интересные места, достойные вашего отпуска.
 			</p>
 			<ul class="intro__list-items">
-				<li class="intro__list-item"><span class="intro__list-span">Часовых поясов </span>11</li>
-				<li class="intro__list-item"><span class="intro__list-span">Объектов природного наследия ЮНЕСКО</span>12
+				<li class="intro__list-item"><span class="intro__list-span">Часовых поясов </span> 11</li>
+				<li class="intro__list-item"><span class="intro__list-span">Объектов природного наследия ЮНЕСКО</span>
+					12
 				</li>
 				<li class="intro__list-item"><span class="intro__list-span">Объектов культурного наследия
-						ЮНЕСКО</span>16</li>
-				<li class="intro__list-item"><span class="intro__list-span">Природных заповедников</span>105</li>
-				<li class="intro__list-item"><span class="intro__list-span">Аэропортов</span>241</li>
+						ЮНЕСКО</span> 16</li>
+				<li class="intro__list-item"><span class="intro__list-span">Природных заповедников</span> 105</li>
+				<li class="intro__list-item"><span class="intro__list-span">Аэропортов</span> 241</li>
 			</ul>
 		</section>
-		<!--Комментарий для ревьюера:<ul class="photo-grid"> или <ul class="galley__photo-grid">? -->
+		
 		<section class="gallery">
 			<ul class="photo-grid">
 				<li class="photo-grid__item"><img src="./images/photo-grid/1__item.jpg" alt="Вид из окна поезда"
@@ -91,13 +92,12 @@
 			</ul>
 		</section>
 		<section class="places">
-			<!--Вопрос к ревьюеру: Пока не знаю решения лучше для <div class="place">, хотел сделать его ul элементом, но не уверен -->
-			<div class="place">
+			<article class="place">
 				<h2 class="place__title">Куршская коса</h2>
-				<ul class="palce__website">
-					<li class="place__url-heading">URL</li>
-					<li><a class="place__link" target="_blank" href="#">park-kosa.ru</a></li>
-				</ul>
+				<div class="place__website">
+					<p class="place__url-heading">url</p>
+					<a class="place__link" target="_blank" href="http://park-kosa.ru">park-kosa.ru</a>
+				</div>
 				<img src="./images/photo-place/1__image.jpg" alt="Куршская коса" class="place__image">
 				<div class="place__text">
 
@@ -117,14 +117,14 @@
 						спокойствие природы и запах стального, прохладного моря.</p>
 
 				</div>
-			</div>
-			<div class="place">
+			</article>
+			<article class="place">
 				<h2 class="place__title">Кольский</h2>
-				<ul class="palce__website">
-					<li class="place__url-heading">URL</li>
-					<li><a class="place__link" target="_blank" href="https://yourshot.nationalgeographic.com/photos/?keywords=kolskiy
-						">National Geographic</a></li>
-				</ul>
+				<div class="place__website">
+					<p class="place__url-heading">url</p>
+					<a class="place__link" target="_blank" href="https://yourshot.nationalgeographic.com/photos/?keywords=kolskiy
+						">National Geographic</a>
+				</div>
 				<img src="./images/photo-place/2__image.jpg" alt="Кольский" class="place__image">
 				<div class="place__text">
 
@@ -141,14 +141,14 @@
 						в Мурманск.</p>
 
 				</div>
-			</div>
-			<div class="place">
+			</article>
+			<article class="place">
 				<h2 class="place__title">Алтай</h2>
-				<ul class="palce__website">
-					<li class="place__url-heading">URL</li>
-					<li><a class="place__link" target="_blank"
-							href="https://www.facebook.com/vera.bashmakova/posts/10156011613718822">Facebook</a></li>
-				</ul>
+				<div class="place__website">
+					<p class="place__url-heading">url</p>
+					<a class="place__link" target="_blank"
+						href="https://www.facebook.com/vera.bashmakova/posts/10156011613718822">Facebook</a>
+				</div>
 				<img src="./images/photo-place/3__image.jpg" alt="Алтай" class="place__image">
 				<div class="place__text">
 
@@ -164,15 +164,15 @@
 						края.</p>
 
 				</div>
-			</div>
+			</article>
 
-			<div class="place">
+			<article class="place">
 				<h2 class="place__title">Зимний Байкал</h2>
-				<ul class="palce__website">
-					<li class="place__url-heading">URL</li>
-					<li><a class="place__link" target="_blank"
-							href="https://vk.com/baikalmile">https://vk.com/baikalmile</a></li>
-				</ul>
+				<div class="place__website">
+					<p class="place__url-heading">url</p>
+					<a class="place__link" target="_blank"
+						href="https://vk.com/baikalmile">https://vk.com/baikalmile</a>
+				</div>
 				<img src="./images/photo-place/4__image.jpg" alt="Зимний Байкал" class="place__image">
 				<div class="place__text">
 
@@ -187,14 +187,14 @@
 						года на фестивале «Байкальская миля» был поставлен мировой рекорд — 197.011 км/ч.</p>
 
 				</div>
-			</div>
+			</article>
 
-			<div class="place">
+			<article class="place">
 				<h2 class="place__title">Карелия</h2>
-				<ul class="palce__website">
-					<li class="place__url-heading">URL</li>
-					<li><a class="place__link" target="_blank" href="http://vodlozero.ru">http://vodlozero.ru/</a></li>
-				</ul>
+				<div class="place__website">
+					<p class="place__url-heading">url</p>
+					<a class="place__link" target="_blank" href="http://vodlozero.ru">http://vodlozero.ru/</a>
+				</div>
 				<img src="./images/photo-place/5__image.jpg" alt="Карелия" class="place__image">
 				<div class="place__text">
 
@@ -207,7 +207,7 @@
 						в паре метров от земли помечены медвежьими когтями. Чтобы все знали, кто тут хозяин.</p>
 
 				</div>
-			</div>
+			</article>
 		</section>
 		<section class="cover">
 			<a class="cover__link" target="_blank" href="https://stampsy.com/na-elektrichkakh-do-baikala">

@@ -1,18 +1,12 @@
-@import url(./__title/lead__title.css);
-@import url(./__subtitle/lead__subtitle.css);
-@import url(./__image/lead__image.css);
-@import url(./__figure/lead__figure.css);
-@import url(./__caption/lead__caption.css);
-
 .lead {
   margin: 0 auto;
   max-width: calc(100% - 296px);
   color: #fff;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1279px) {
   .lead {
-    max-width: calc(100% - 96px);
+    max-width: 928px;
   }
 }
 
@@ -22,8 +16,4 @@
   }
 }
 
-@media screen and (max-width: 425px) {
-  .lead {
-    max-width: calc(100% - 4px);
-  }
-}
+

@@ -1,12 +1,10 @@
-@import url(./__link/cover__link.css);
-@import url(./__title/cover__title.css);
-@import url(./__subtitle/cover__subtitle.css);
-
 .cover {
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: stretch;
-  width: 100%;
+  max-width: calc(100% - 96px);
+
   min-height: 740px;
   background-image: url(../../images/cover/train__background.jpg);
   background-size: cover;
@@ -16,6 +14,7 @@
 
 @media screen and (max-width: 1024px) {
   .cover {
+    max-width: 100%;
     min-height: 640px;
   }
 }

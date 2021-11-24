@@ -17,29 +17,22 @@
     padding-bottom: 27px;
   }
 
-  .place__paragraph:last-child {
-    padding-bottom: 0;
-  }
+  
 }
 
 @media screen and (max-width: 768px) {
   .place__paragraph {
     padding-bottom: 25px;
+    font-size: 16px;
   }
 
-  .place__paragraph:last-child {
-    padding-bottom: 0;
-  }
 }
 
 @media screen and (max-width: 425px) {
   .place__paragraph {
-    font-size: 16px;
+    max-width: 288px;
     line-height: 26px;
     padding-bottom: 25px;
   }
 
-  .place__paragraph:last-child {
-    padding-bottom: 0;
-  }
 }
