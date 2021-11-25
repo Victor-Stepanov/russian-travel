@@ -4,7 +4,7 @@
   align-items: center;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 559px) {
   .footer__links {
     padding-bottom: 48px;
     align-items: stretch;

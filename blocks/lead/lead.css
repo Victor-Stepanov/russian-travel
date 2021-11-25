@@ -2,12 +2,13 @@
   margin: 0 auto;
   max-width: calc(100% - 296px);
   color: #fff;
+  box-sizing: border-box;
 }
 
 @media screen and (max-width: 1279px) {
   .lead {
     max-width: 928px;
-  }
+    }
 }
 
 @media screen and (max-width: 768px) {
