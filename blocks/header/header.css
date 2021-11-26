@@ -10,13 +10,13 @@
 @media screen and (max-width: 1279px) {
   .header {
     margin-bottom: 48px;
+    
   }
 }
 
 @media screen and (max-width: 768px) {
   .header {
-    margin-left: 24px;
-    margin-right: 24px;
+    max-width: calc(100% - 48px);
   }
 }
 
